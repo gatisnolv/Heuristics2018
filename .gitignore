@@ -1,0 +1,8 @@
+bin/tiles/Board.class
+bin/tiles/Coordinate.class
+bin/tiles/Main.class
+bin/tiles/Rectangle.class
+bin/tiles/Tile.class
+.project
+.settings/org.eclipse.jdt.core.prefs
+.classpath
