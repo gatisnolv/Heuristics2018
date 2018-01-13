@@ -2,6 +2,9 @@ package tiles;
 
 public class Main {
 	
+	private static final String DRAW_DOT = ". ";
+	private static final String DRAW_SPACE = "  ";
+	
 	Tile[] tileArray;
 	Board board;
 	
@@ -25,28 +28,26 @@ public class Main {
 		board.placeTile(tileArray[3], 3, 2, 4);
 	}
 	
-	public void printTilingDotDrawing() {//work in progress
-		for (int i=0;i<=board.xlen;i++) {
-			System.out.print(". ");
+	public void printTilingDotDrawing() {
+		for (int i=0;i<=board.xlen;i++) {//upper border
+			System.out.print(DRAW_DOT);
 		}
 		System.out.println();
 		for (int j=0;j<board.ylen;j++) {
-			System.out.print(". ");
-			for (int i=1;i<board.xlen;i++) {
-				if(board.grid[i][j]!=board.grid[i-1][j]) {
-					System.out.print(". ");
-				}else if(i==board.xlen-1) {//small issue
-					System.out.print("  .");
+			System.out.print(DRAW_DOT);//left border
+			for (int i=0;i<board.xlen;i++) {
+				if(i==board.xlen-1 || board.grid[i][j]!=board.grid[i+1][j]) {//border or different tile. order crucial
+					System.out.print(DRAW_DOT);
 				}else if(j==board.ylen-1 || board.grid[i][j]!=board.grid[i][j+1]) {
-					System.out.print(". ");
+					System.out.print(DRAW_DOT);
 				}else {
-					System.out.print("  ");
+					System.out.print(DRAW_SPACE);//same tile, so print blank space
 				}
 			}
 			System.out.println();
 		}
 	}
-
+	
 	public void printTilingId() {
 		for(int i=0;i<board.ylen;i++) {
 			for(int j=0;j<board.xlen;j++) {
