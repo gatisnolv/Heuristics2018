@@ -8,6 +8,10 @@ public class Coordinate {
 	Coordinate(){
 		clear();
 	}
+
+	Coordinate(int x, int y){
+		set(x, y);
+	}
 	
 	public int getX() {
 		return x;
