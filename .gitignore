@@ -6,3 +6,17 @@ bin/tiles/Tile.class
 .project
 .settings/org.eclipse.jdt.core.prefs
 .classpath
+tiles/TilingPlus$Skyline$Node.class
+tiles/TilingPlus$Skyline.class
+tiles/TilingPlus.class
+tiles/Tiling.class
+tiles/Tile.class
+tiles/Solution.class
+tiles/Rectangle.class
+tiles/FindTilings$TileDescription.class
+tiles/FindTilings.class
+tiles/Coordinate.class
+tiles/Board.class
+tiles/code_setaside.java
+tiles/old_main.java
+tiles/Newboard.java
