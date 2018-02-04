@@ -7,7 +7,7 @@ The program can be compiled from WITHIN the ‘tiles’ folder with the command 
 The program can be run from the top folder (containig both the tiles and tilings folders) with the following: 
 java tiles.FindTilings <algorithm_to_use> <name_of_problem_file-OR-all> <timeout_in_seconds> <mode>
 
-#Parameters:
+# Parameters:
 The program expects 4 parameters:
 algorithm_to_use: 1 (=basic) OR 2 (=advanced)
 name_of_problem_file: name of the problem input file without the .tiles extension OR ‘all’ 
@@ -15,7 +15,7 @@ name_of_problem_file: name of the problem input file without the .tiles extensio
 timeout_in_seconds: integer>=0 (0=no timeout)
 mode: print OR silent
 
-#Example usage patterns (with explanation):
+# Example usage patterns (with explanation):
 java tiles.FindTilings 1 2 60 print
 This example will use the ‘basic’ algorithm to find solutions to the ‘2.tiles’ problem input file within the timeout of 60 seconds and as part of the output will print the solutions graphically. At the beginning of the output there will be reported the number of solutions found and the time elapsed as part of the search.
 
